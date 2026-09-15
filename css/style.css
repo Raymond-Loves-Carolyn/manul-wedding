@@ -150,7 +150,11 @@ p {
   overflow: hidden;
   text-align: center;
   color: #fff;
-  background: transparent;
+  background-color: #071426;
+  background-image: url("../images/starry-bg.png");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .celestial-stars {
@@ -223,12 +227,6 @@ p {
 /* =========================================================
    COUNTDOWN
    ========================================================= */
-/*
-.starry-section {
-  background: transparent;
-  color: #fff;
-}
-*/
 .starry-section {
     background-color: #071426;
     background-image: url("../images/countdown-bg.png");
@@ -240,7 +238,9 @@ p {
 }
 
 #fh5co-countdown {
-  padding: 55px 0;
+  position: relative;
+  margin-top: -2px;
+  padding: 70px 0;
 }
 
 #fh5co-countdown h1 {
@@ -793,8 +793,8 @@ p {
 
 
 /* =========================================================
-   CONTINUOUS STARRY BLUE PAGE
-   These overrides intentionally come last.
+   DARK PAGE / SECTION OVERRIDES
+   Individual celestial and countdown sections keep their own backgrounds.
    ========================================================= */
 
 html,
@@ -803,19 +803,6 @@ body,
   background: #071426;
 }
 
-/* Every section below the photo uses the same continuous sky. */
-/*
-.celestial-divider,
-#fh5co-countdown,
-.starry-section,
-.fh5co-section-gray,
-#fh5co-couple,
-#fh5co-colors,
-#fh5co-gift-registry,
-.starry-bg {
-  background: transparent !important;
-}
-*/
 
 /* Dark translucent navigation so the sky continues behind it. */
 #fh5co-header-section {
