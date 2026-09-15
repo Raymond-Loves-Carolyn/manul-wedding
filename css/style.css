@@ -1750,3 +1750,377 @@ body,
   border-color: #fff6d8;
   text-decoration: none;
 }
+
+/* =========================================================
+   REGISTRY PAGE
+   ========================================================= */
+
+.registry-hero {
+  background-image:
+    url("../images/registry-bg.png");
+
+  background-position: center top;
+}
+
+
+/* Main registry background */
+
+#registry-page {
+  position: relative;
+
+  color: rgba(248, 242, 230, .78);
+
+  background-color: #071426;
+}
+
+.registry-section {
+  position: relative;
+
+  padding: 95px 0 100px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(7, 20, 38, .80),
+      #071426 70%
+    ),
+    url("../images/registry-bg.png");
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.registry-intro {
+  max-width: 760px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.registry-kicker {
+  margin: 0 0 12px;
+
+  color: #d8c69d;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.registry-intro h2 {
+  margin: 0;
+
+  color: #f8f2e6;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 400;
+  font-style: italic;
+
+  line-height: 1.1;
+}
+
+.registry-title-divider {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  width: 250px;
+
+  margin: 22px auto;
+}
+
+.registry-title-divider span {
+  width: 80px;
+  height: 1px;
+
+  background:
+    rgba(194, 166, 121, .72);
+}
+
+.registry-title-divider b {
+  color: #fff6d8;
+
+  font-weight: 400;
+}
+
+.registry-intro > p:not(.registry-kicker) {
+  max-width: 680px;
+
+  margin: 0 auto 16px;
+
+  color: rgba(248, 242, 230, .76);
+
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   REGISTRY CARDS
+   ========================================================= */
+
+.registry-options {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 15px;
+}
+
+.registry-options > div {
+  display: flex;
+
+  margin-bottom: 30px;
+}
+
+.registry-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 540px;
+
+  padding: 34px 32px 38px;
+
+  border:
+    1px solid rgba(194, 166, 121, .24);
+
+  background:
+    rgba(13, 29, 51, .76);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, .16);
+
+  text-align: center;
+
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    background .25s ease;
+}
+
+.registry-card:hover {
+  transform: translateY(-4px);
+
+  border-color:
+    rgba(194, 166, 121, .52);
+
+  background:
+    rgba(18, 37, 63, .84);
+}
+
+.registry-card-number {
+  margin: 0 0 14px;
+
+  color: rgba(216, 198, 157, .52);
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+
+  letter-spacing: 3px;
+}
+
+.registry-card h3 {
+  margin: 0;
+
+  color: #f8f2e6;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.registry-card-divider {
+  width: 45px;
+  height: 1px;
+
+  margin: 18px auto 28px;
+
+  background:
+    rgba(194, 166, 121, .55);
+}
+
+
+/* =========================================================
+   QR CODES
+   ========================================================= */
+
+.registry-qr {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 230px;
+  height: 230px;
+
+  margin: 0 auto 25px;
+  padding: 12px;
+
+  background: #fff;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, .18);
+}
+
+.registry-qr img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   CASH / CAT IMAGE
+   ========================================================= */
+
+.registry-cat {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 230px;
+  height: 230px;
+
+  margin: 0 auto 25px;
+}
+
+.registry-cat img {
+  display: block;
+
+  max-width: 185px;
+  max-height: 185px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.registry-account {
+  margin: 0 0 15px;
+
+  color: #f8f2e6;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+}
+
+.registry-card-note {
+  max-width: 260px;
+
+  margin: auto auto 0;
+
+  color: rgba(248, 242, 230, .65);
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CLOSING MESSAGE
+   ========================================================= */
+
+.registry-closing {
+  max-width: 650px;
+
+  margin: 50px auto 0;
+
+  text-align: center;
+}
+
+.registry-closing-star {
+  margin-bottom: 18px;
+
+  color: #fff6d8;
+
+  font-size: 14px;
+}
+
+.registry-closing p {
+  margin: 0;
+
+  color: rgba(248, 242, 230, .72);
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-style: italic;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   REGISTRY MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  .registry-section {
+    padding: 65px 0 75px;
+  }
+
+  .registry-intro {
+    margin-bottom: 45px;
+
+    padding: 0 10px;
+  }
+
+  .registry-intro h2 {
+    font-size: 40px;
+  }
+
+  .registry-options {
+    display: block;
+  }
+
+  .registry-options > div {
+    display: block;
+  }
+
+  .registry-card {
+    min-height: 0;
+
+    max-width: 430px;
+
+    margin: 0 auto;
+    padding: 30px 25px 35px;
+  }
+
+  .registry-qr,
+  .registry-cat {
+    width: 210px;
+    height: 210px;
+  }
+
+  .registry-cat img {
+    max-width: 170px;
+    max-height: 170px;
+  }
+
+}
