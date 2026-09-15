@@ -223,10 +223,20 @@ p {
 /* =========================================================
    COUNTDOWN
    ========================================================= */
-
+/*
 .starry-section {
   background: transparent;
   color: #fff;
+}
+*/
+.starry-section {
+    background-color: #071426;
+    background-image: url("../images/countdown-bg.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    color: #fff;
 }
 
 #fh5co-countdown {
