@@ -587,19 +587,17 @@ p {
   margin: 0 auto;
 }
 
-//* =========================================================
+/* =========================================================
    FOOTER
    ========================================================= */
 
 #footer {
   position: relative;
-  min-height: 360px;
+  min-height: 400px;
+  padding: 130px 0 80px;
 
-  /* Pull footer upward into the celestial section */
-  margin-top: -80px;
-
-  /* Extra top padding compensates for the overlap */
-  padding: 180px 0 80px;
+  /* Slight overlap with registry */
+  margin-top: -60px;
 
   color: #fff;
 
@@ -609,46 +607,23 @@ p {
   background-repeat: no-repeat;
 }
 
-/* Dark overlay over footer photo */
+/*
+   Normal darkening for text readability.
+   Notice this is translucent — footer.jpg remains visible.
+*/
 #footer::before {
   content: "";
   position: absolute;
   inset: 0;
 
-  background: rgba(0, 0, 0, .52);
+  background: rgba(0, 0, 0, .38);
 
   z-index: 1;
 }
 
-/* Celestial-to-photo transition */
-#footer::after {
-  content: "";
-  position: absolute;
-
-  top: 0;
-  left: 0;
-  right: 0;
-
-  height: 220px;
-
-  background: linear-gradient(
-    to bottom,
-    #071426 0%,
-    rgba(7, 20, 38, .96) 12%,
-    rgba(7, 20, 38, .82) 30%,
-    rgba(7, 20, 38, .55) 52%,
-    rgba(7, 20, 38, .25) 72%,
-    rgba(7, 20, 38, 0) 100%
-  );
-
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Keep footer text above both overlays */
 #footer > * {
   position: relative;
-  z-index: 3;
+  z-index: 2;
 }
 
 #footer h2 {
