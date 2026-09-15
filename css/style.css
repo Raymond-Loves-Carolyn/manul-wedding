@@ -1721,3 +1721,32 @@ body,
   }
 
 }
+.ww-venue-link {
+  margin: 20px 0 22px;
+}
+
+.ww-venue-link a {
+  color: #d8c69d;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid rgba(216, 198, 157, .45);
+
+  padding-bottom: 4px;
+
+  transition:
+    color .25s ease,
+    border-color .25s ease;
+}
+
+.ww-venue-link a:hover,
+.ww-venue-link a:focus {
+  color: #fff6d8;
+  border-color: #fff6d8;
+  text-decoration: none;
+}
