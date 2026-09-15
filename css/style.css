@@ -396,12 +396,14 @@ p {
    STORY / COUPLE
    ========================================================= */
 
-.fh5co-section-gray {
-  background: var(--ivory);
+.fh5co-section-gray,
+#fh5co-couple {
+  background: #071426;
 }
 
 #fh5co-couple {
   padding: 70px 0 90px;
+  color: rgba(248, 242, 230, .82);
 }
 
 .story-intro {
@@ -412,7 +414,7 @@ p {
 
 .story-intro h2 {
   margin: 0;
-  color: var(--midnight);
+  color: #f8f2e6;
   font-size: 58px;
   font-weight: 400;
   font-style: italic;
@@ -430,17 +432,17 @@ p {
 .story-heading-divider span {
   width: 80px;
   height: 1px;
-  background: var(--gold);
+  background: rgba(194, 166, 121, .78);
 }
 
 .story-heading-divider b {
-  color: var(--midnight);
+  color: #fff6d8;
   font-weight: 400;
 }
 
 .story-intro h3 {
   margin: 0;
-  color: var(--midnight);
+  color: #d8c69d;
   font-family: 'Montserrat', sans-serif;
   font-size: 11px;
   font-weight: 500;
@@ -451,8 +453,27 @@ p {
 .story-intro p {
   max-width: 600px;
   margin: 18px auto 0;
-  color: #69645d;
+  color: rgba(248, 242, 230, .80);
 }
+
+#fh5co-couple p {
+  color: rgba(248, 242, 230, .80);
+}
+
+#fh5co-couple strong {
+  color: #fff6d8;
+}
+
+#fh5co-couple a {
+  color: #d8c69d;
+}
+
+#fh5co-couple a:hover {
+  color: #fff6d8;
+}
+
+
+/* Couple cats */
 
 .couple-cats {
   display: flex;
@@ -461,9 +482,17 @@ p {
   flex-wrap: wrap;
 }
 
-.cat-side { padding: 0; }
-.cat-left { text-align: right; }
-.cat-right { text-align: left; }
+.cat-side {
+  padding: 0;
+}
+
+.cat-left {
+  text-align: right;
+}
+
+.cat-right {
+  text-align: left;
+}
 
 #fh5co-couple .cat-side img {
   display: inline-block;
@@ -486,21 +515,24 @@ p {
   fill: var(--plum);
 }
 
+
+/* Wedding details headings within this section */
+
 .heading-section {
   padding-bottom: 1em;
   margin-bottom: 2.2em;
 }
 
 .heading-section h2 {
-  color: var(--blue);
+  color: #f8f2e6;
   font-size: 50px;
   font-weight: 400;
 }
 
 .heading-section p {
+  color: rgba(248, 242, 230, .80);
   font-size: 17px;
 }
-
 /* =========================================================
    WEDDING COLORS
    ========================================================= */
@@ -558,10 +590,16 @@ p {
 
 #fh5co-gift-registry {
   padding: 0;
+  background-color: #071426;
+  background-image: url("../images/registry-bg.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
-.starry-bg {
+#fh5co-gift-registry .starry-bg {
   padding: 75px 0;
+  background: transparent;
 }
 
 .registry-copy h2,
