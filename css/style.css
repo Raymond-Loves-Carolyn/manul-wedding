@@ -606,7 +606,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.58);
+  background: rgba(0, 0, 0, .58);
 }
 
 #footer > * {
@@ -614,14 +614,36 @@ p {
   z-index: 1;
 }
 
+/* Center the footer content as one visual unit */
+#footer .container {
+  display: flex;
+  min-height: 240px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Nudge the whole group slightly downward */
+  transform: translateY(15px);
+}
+
 #footer h2 {
-  margin: 0 0 10px;
+  margin: 0;
   color: #fff;
+
   font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+
+  letter-spacing: 8px;
 }
 
 #footer p {
+  margin: 24px 0 0;
   color: #fff;
+
+  font-size: 20px;
+  line-height: 1.4;
 }
 
 /* =========================================================
