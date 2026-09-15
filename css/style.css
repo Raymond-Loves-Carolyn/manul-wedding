@@ -815,6 +815,7 @@ body,
 }
 
 /* Every section below the photo uses the same continuous sky. */
+/*
 .celestial-divider,
 #fh5co-countdown,
 .starry-section,
@@ -825,6 +826,7 @@ body,
 .starry-bg {
   background: transparent !important;
 }
+*/
 
 /* Dark translucent navigation so the sky continues behind it. */
 #fh5co-header-section {
