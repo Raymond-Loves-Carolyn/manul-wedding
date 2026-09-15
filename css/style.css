@@ -714,10 +714,58 @@ body,
 
 /* Match mobile menu to the night sky. */
 #offcanvas-menu {
-  background: #071426;
-  border-left: 1px solid rgba(194, 166, 121, .2);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -240px;
+  z-index: 99;
+  display: none;
+  width: 240px;
+  padding: 20px;
+  overflow-y: auto;
+  background: #222;
 }
 
 #offcanvas-menu a {
   color: rgba(248, 242, 230, .8);
+}
+/* =========================================================
+   OFF-CANVAS MOBILE NAV
+   ========================================================= */
+
+/* Never show the generated mobile menu on desktop */
+#offcanvas-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #offcanvas-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -240px;
+    width: 240px;
+    padding: 20px;
+    overflow-y: auto;
+    background: #071426;
+    z-index: 9999;
+  }
+
+  #offcanvas-menu ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  #offcanvas-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #offcanvas-menu a {
+    display: block;
+    padding: 10px 0;
+    color: #f8f2e6;
+  }
 }
