@@ -594,23 +594,25 @@ p {
 #footer {
   position: relative;
   min-height: 400px;
-  padding: 130px 0 80px;
 
-  /* Slight overlap with registry */
+  /* Pull the footer slightly underneath the registry */
   margin-top: -60px;
+
+  /* Extra room at top because of the overlap */
+  padding: 130px 0 80px;
 
   color: #fff;
 
+  /* Your original footer photograph */
   background-image: url("../images/footer.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  overflow: hidden;
 }
 
-/*
-   Normal darkening for text readability.
-   Notice this is translucent — footer.jpg remains visible.
-*/
+/* Gentle darkening so white footer text stays readable */
 #footer::before {
   content: "";
   position: absolute;
@@ -619,8 +621,10 @@ p {
   background: rgba(0, 0, 0, .38);
 
   z-index: 1;
+  pointer-events: none;
 }
 
+/* Keep all actual footer content above the photo overlay */
 #footer > * {
   position: relative;
   z-index: 2;
@@ -635,6 +639,46 @@ p {
 #footer p {
   color: #fff;
 }
+
+/* =========================================================
+   REGISTRY → FOOTER TRANSITION
+   ========================================================= */
+
+#fh5co-gift-registry {
+  position: relative;
+  z-index: 2;
+
+  background-color: #071426;
+  background-image: url("../images/registry-bg.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Fade the bottom of the celestial registry toward the footer */
+#fh5co-gift-registry::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 140px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 20, 38, 0) 0%,
+    rgba(7, 20, 38, .10) 30%,
+    rgba(7, 20, 38, .30) 55%,
+    rgba(7, 20, 38, .55) 78%,
+    rgba(7, 20, 38, .72) 100%
+  );
+
+  z-index: 3;
+  pointer-events: none;
+}
+
 
 /* =========================================================
    DARK PAGE / SECTION OVERRIDES
