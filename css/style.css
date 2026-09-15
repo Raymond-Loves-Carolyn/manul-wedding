@@ -643,21 +643,10 @@ p {
   overflow-x: hidden;
 }
 
-/*
 #fh5co-page {
   position: relative;
   transition: .5s;
-}*/
-#fh5co-page {
-  position: relative;
-  transition: .5s;
-
-  /* Continuous gradual starry-blue background */
   background-color: #071426;
-  background-image: url("../images/starry-bg.png");
-  background-repeat: repeat-y;
-  background-position: top center;
-  background-size: 100% auto;
 }
 
 .fh5co-offcanvas #fh5co-page {
