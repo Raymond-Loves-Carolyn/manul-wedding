@@ -587,31 +587,68 @@ p {
   margin: 0 auto;
 }
 
-/* =========================================================
+//* =========================================================
    FOOTER
    ========================================================= */
 
 #footer {
   position: relative;
-  min-height: 300px;
-  padding: 80px 0;
+  min-height: 360px;
+
+  /* Pull footer upward into the celestial section */
+  margin-top: -80px;
+
+  /* Extra top padding compensates for the overlap */
+  padding: 180px 0 80px;
+
   color: #fff;
+
   background-image: url("../images/footer.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+/* Dark overlay over footer photo */
 #footer::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.58);
+
+  background: rgba(0, 0, 0, .52);
+
+  z-index: 1;
 }
 
+/* Celestial-to-photo transition */
+#footer::after {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 220px;
+
+  background: linear-gradient(
+    to bottom,
+    #071426 0%,
+    rgba(7, 20, 38, .96) 12%,
+    rgba(7, 20, 38, .82) 30%,
+    rgba(7, 20, 38, .55) 52%,
+    rgba(7, 20, 38, .25) 72%,
+    rgba(7, 20, 38, 0) 100%
+  );
+
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Keep footer text above both overlays */
 #footer > * {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 #footer h2 {
@@ -623,165 +660,6 @@ p {
 #footer p {
   color: #fff;
 }
-
-/* Existing template animation hook */
-.js .animate-box {
-  opacity: 0;
-}
-
-#fh5co-wrapper {
-  position: relative;
-  overflow-x: hidden;
-}
-
-#fh5co-page {
-  position: relative;
-  transition: .5s;
-  background-color: #071426;
-}
-
-.fh5co-offcanvas #fh5co-page {
-  transform: translateX(-240px);
-}
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media screen and (max-width: 768px) {
-  .wedding-hero {
-    height: 700px;
-  }
-
-  .wedding-hero-photo {
-    background-size: cover;
-    background-position: center center;
-  }
-
-  .wedding-hero-content {
-    top: 49%;
-  }
-
-  .wedding-hero-content h1 {
-    font-size: 46px;
-  }
-
-  .wedding-hero-content h2 {
-    font-size: 14px;
-    letter-spacing: 7px;
-  }
-
-  .wedding-hero-content p {
-    font-size: 10px;
-    letter-spacing: 4px;
-  }
-
-  .wedding-hero-fade {
-    height: 300px;
-  }
-
-  .celestial-divider {
-    padding: 10px 14px 55px;
-  }
-
-  .celestial-stars {
-    gap: 8px;
-  }
-
-  .celestial-person {
-    gap: 7px;
-  }
-
-  .star-name {
-    font-size: 8px;
-    letter-spacing: 2px;
-  }
-
-  .vega-star { font-size: 29px; }
-  .altair-star { font-size: 25px; }
-
-  .celestial-date {
-    margin-top: 24px;
-    font-size: 9px;
-    letter-spacing: 4px;
-  }
-
-  #fh5co-menu-wrap {
-    display: none;
-  }
-
-  .fh5co-nav-toggle {
-    display: block;
-  }
-
-  #offcanvas-menu {
-    display: block;
-  }
-
-  #fh5co-countdown .countdown {
-    font-size: 30px;
-  }
-
-  #fh5co-countdown .countdown span {
-    margin: 0 7px;
-  }
-
-  #fh5co-couple {
-    padding: 55px 0 65px;
-  }
-
-  .story-intro h2,
-  .colors-title {
-    font-size: 43px;
-  }
-
-  .story-intro h3 {
-    font-size: 9px;
-    letter-spacing: 4px;
-  }
-
-  .heading-section h2,
-  .registry-copy h2 {
-    font-size: 40px;
-  }
-
-  .qr-frame {
-    max-width: 260px;
-    margin: 0 auto;
-  }
-
-  .registry-options > div {
-    margin-bottom: 45px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .wedding-hero {
-    height: 620px;
-  }
-
-  .wedding-hero-content h1 {
-    font-size: 39px;
-  }
-
-  .celestial-bridge {
-    min-width: 45px;
-  }
-
-  .story-intro {
-    padding: 0 12px;
-  }
-
-  .color-circle {
-    width: 62px;
-    height: 62px;
-  }
-
-  .palette {
-    gap: 16px;
-  }
-}
-
 
 /* =========================================================
    DARK PAGE / SECTION OVERRIDES
