@@ -1090,7 +1090,7 @@ body,
 
 /* Temporary hero images. Swap these URLs independently later. */
 .when-where-hero {
-  background-image: url("../images/starry-bg.png");
+  background-image: url("../images/into-the-garden.png");
 }
 
 .registry-hero {
@@ -1098,15 +1098,15 @@ body,
 }
 
 .bridal-party-hero {
-  background-image: url("../images/starry-bg.png");
+  background-image: url("../images/garden-run.png");
 }
 
 .gallery-hero {
-  background-image: url("../images/first meet.jpg");
+  background-image: url("../images/first-meeting.png");
 }
 
 .faq-hero {
-  background-image: url("../images/starry-bg.png");
+  background-image: url("../images/ring-closeup.png");
 }
 
 /* =========================================================
