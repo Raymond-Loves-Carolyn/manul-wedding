@@ -1090,23 +1090,23 @@ body,
 
 /* Temporary hero images. Swap these URLs independently later. */
 .when-where-hero {
-  background-image: url("../images/into-the-garden.png");
+  background-image: url("../images/starry-bg.png");
 }
 
 .registry-hero {
-  background-image: url("../images/veil-of-vega.png");
+  background-image: url("../images/starry-bg.png");
 }
 
 .bridal-party-hero {
-  background-image: url("../images/garden-run.png");
+  background-image: url("../images/starry-bg.png");
 }
 
 .gallery-hero {
-  background-image: url("../images/first-meeting.png");
+  background-image: url("../images/starry-bg.png");
 }
 
 .faq-hero {
-  background-image: url("../images/ring-closeup.png");
+  background-image: url("../images/starry-bg.png");
 }
 
 /* =========================================================
@@ -1951,369 +1951,278 @@ body,
     font-size: 48px;
   }
 }
+
+
 /* =========================================================
-   FAQ PAGE
-   Append this block to the END of style.css
+   BRIDAL PARTY / FAMILY PAGE
    ========================================================= */
 
-#faq-page {
-  background: #071426;
-  color: rgba(248, 242, 230, .78);
+#bridal-party-page {
+    padding: 80px 0 95px;
+    background: #071426;
+    color: rgba(248, 242, 230, 0.82);
 }
 
-.faq-section {
-  position: relative;
-  padding: 95px 0 105px;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(62, 90, 154, .16), transparent 38%),
-    #071426;
+.bp-intro {
+    max-width: 720px;
+    margin: 0 auto 65px;
+    text-align: center;
 }
 
-.faq-intro {
-  max-width: 760px;
-  margin: 0 auto 75px;
-  padding: 0 15px;
-  text-align: center;
+.bp-eyebrow,
+.bp-group-heading > span {
+    display: block;
+    margin-bottom: 12px;
+    color: #d8c69d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
-.faq-kicker {
-  margin: 0 0 12px;
-  color: #d8c69d;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+.bp-intro h2 {
+    margin: 0;
+    color: #f8f2e6;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 52px;
+    font-weight: 400;
 }
 
-.faq-intro h2 {
-  margin: 0;
-  color: #f8f2e6;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 52px;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.1;
+.bp-intro > p:last-child {
+    max-width: 610px;
+    margin: 18px auto 0;
+    color: rgba(248, 242, 230, 0.72);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
 }
 
-.faq-title-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  width: 250px;
-  margin: 22px auto;
+.bp-heading-divider,
+.bp-section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
 }
 
-.faq-title-divider span {
-  width: 80px;
-  height: 1px;
-  background: rgba(194, 166, 121, .72);
+.bp-heading-divider {
+    max-width: 250px;
+    margin: 16px auto;
 }
 
-.faq-title-divider b {
-  color: #fff6d8;
-  font-weight: 400;
+.bp-heading-divider span,
+.bp-section-divider span {
+    display: block;
+    height: 1px;
+    background: rgba(194, 166, 121, 0.58);
 }
 
-.faq-intro > p:not(.faq-kicker) {
-  max-width: 650px;
-  margin: 0 auto;
-  color: rgba(248, 242, 230, .72);
-  font-size: 14px;
-  line-height: 1.9;
+.bp-heading-divider span {
+    width: 80px;
 }
 
-.faq-guide-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 13px 26px;
-  border: 1px solid rgba(194, 166, 121, .62);
-  color: #f8f2e6 !important;
-  background: rgba(7, 20, 38, .24);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: background .25s ease, color .25s ease, border-color .25s ease;
+.bp-heading-divider b,
+.bp-section-divider b {
+    color: #fff6d8;
+    font-weight: 400;
 }
 
-.faq-guide-button:hover,
-.faq-guide-button:focus {
-  border-color: #d8c69d;
-  background: #d8c69d;
-  color: #071426 !important;
-  text-decoration: none;
+.bp-group {
+    margin-bottom: 35px;
 }
 
-/* FAQ GROUPS */
-
-.faq-group {
-  max-width: 900px;
-  margin: 0 auto 65px;
+.bp-group-heading {
+    margin-bottom: 38px;
+    text-align: center;
 }
 
-.faq-group-heading {
-  display: flex;
-  align-items: baseline;
-  gap: 18px;
-  margin-bottom: 15px;
-  padding: 0 5px 13px;
-  border-bottom: 1px solid rgba(194, 166, 121, .34);
+.bp-group-heading > span {
+    margin-bottom: 5px;
 }
 
-.faq-group-heading span {
-  color: rgba(216, 198, 157, .52);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 3px;
+.bp-group-heading h3 {
+    margin: 0;
+    color: #f8f2e6;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 38px;
+    font-weight: 400;
 }
 
-.faq-group-heading h3 {
-  margin: 0;
-  color: #d8c69d;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 28px;
-  font-weight: 500;
-  font-style: italic;
+.bp-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* INDIVIDUAL ACCORDION ROWS */
-
-.faq-item {
-  margin: 0;
-  border-bottom: 1px solid rgba(194, 166, 121, .16);
-  background: transparent;
+.bp-person {
+    max-width: 320px;
+    margin: 0 auto 55px;
+    text-align: center;
 }
 
-.faq-item summary {
-  position: relative;
-  display: grid;
-  grid-template-columns: 52px 1fr 30px;
-  align-items: center;
-  gap: 14px;
-  min-height: 88px;
-  padding: 20px 8px;
-  cursor: pointer;
-  list-style: none;
-  user-select: none;
+/*
+ * Portrait files may be 800x1000 (4:5), but they should NOT display
+ * at that size.  The frame is intentionally capped at 280px wide.
+ */
+.bp-photo {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 4 / 5;
+    margin: 0 auto 24px;
+    overflow: hidden;
+    background: rgba(24, 40, 69, 0.35);
+    border: 1px solid rgba(194, 166, 121, 0.22);
 }
 
-.faq-item summary::-webkit-details-marker {
-  display: none;
+/*
+ * Use contain so unusual test images or tightly-cropped originals
+ * are not magnified into extreme close-ups.  A true 4:5 portrait
+ * will naturally fill the frame.
+ */
+.bp-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
-.faq-item summary::marker {
-  content: "";
+.bp-person h4 {
+    margin: 0 0 7px;
+    color: #f8f2e6;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
-.faq-number {
-  color: rgba(216, 198, 157, .48);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 9px;
-  font-weight: 500;
-  letter-spacing: 2px;
+.bp-role {
+    margin: 0;
+    color: #d8c69d !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+    text-transform: uppercase;
 }
 
-.faq-question {
-  color: #f8f2e6;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 23px;
-  font-weight: 500;
-  line-height: 1.25;
-  transition: color .2s ease;
+.bp-description {
+    max-width: 280px;
+    margin: 15px auto 0;
+    color: rgba(248, 242, 230, 0.64) !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
 }
 
-.faq-item summary:hover .faq-question,
-.faq-item[open] .faq-question {
-  color: #fff6d8;
+.bp-section-divider {
+    max-width: 520px;
+    margin: 30px auto 75px;
 }
 
-/* PLUS / MINUS */
-
-.faq-icon {
-  position: relative;
-  display: block;
-  width: 20px;
-  height: 20px;
-  justify-self: end;
+.bp-section-divider span {
+    width: 200px;
 }
 
-.faq-icon::before,
-.faq-icon::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 16px;
-  height: 1px;
-  background: #d8c69d;
-  transform: translate(-50%, -50%);
-  transition: transform .25s ease, opacity .25s ease;
+.bp-family-section {
+    padding-top: 5px;
 }
 
-.faq-icon::after {
-  transform: translate(-50%, -50%) rotate(90deg);
+.bp-family-section > .bp-intro {
+    margin-bottom: 55px;
 }
 
-.faq-item[open] .faq-icon::after {
-  opacity: 0;
-  transform: translate(-50%, -50%) rotate(0deg);
+.bp-family-group {
+    margin-bottom: 25px;
 }
 
-/* EXPANDED ANSWER */
-
-.faq-answer {
-  padding: 0 52px 28px 74px;
+.bp-family-person {
+    max-width: 260px;
 }
 
-.faq-answer p {
-  max-width: 720px;
-  margin: 0;
-  color: rgba(248, 242, 230, .68);
-  font-size: 13px;
-  line-height: 1.9;
+.bp-family-person .bp-photo {
+    max-width: 230px;
 }
 
-.faq-answer a {
-  color: #d8c69d;
-  border-bottom: 1px solid rgba(216, 198, 157, .42);
+.bp-memorial-label {
+    margin: 12px 0 0;
+    color: rgba(216, 198, 157, 0.78) !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-.faq-answer a:hover,
-.faq-answer a:focus {
-  color: #fff6d8;
-  border-color: #fff6d8;
-  text-decoration: none;
+/* Keep the two family columns visually balanced on desktop. */
+@media screen and (min-width: 992px) {
+    .bp-family-section > .row {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .bp-family-section > .row > .col-md-6 {
+        float: none;
+    }
 }
 
-/* CLOSING */
-
-.faq-closing {
-  max-width: 650px;
-  margin: 80px auto 0;
-  text-align: center;
+@media screen and (max-width: 991px) {
+    .bp-family-section > .row > .col-md-6 + .col-md-6 {
+        margin-top: 45px;
+    }
 }
-
-.faq-closing-star {
-  margin-bottom: 18px;
-  color: #fff6d8;
-  font-size: 14px;
-}
-
-.faq-closing p {
-  margin: 0;
-  color: rgba(248, 242, 230, .68);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 21px;
-  font-style: italic;
-  line-height: 1.5;
-}
-
-/* FAQ RESPONSIVE */
 
 @media screen and (max-width: 768px) {
-  .faq-section {
-    padding: 65px 0 80px;
-  }
+    #bridal-party-page {
+        padding: 60px 0 70px;
+    }
 
-  .faq-intro {
-    margin-bottom: 55px;
-  }
+    .bp-intro {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
 
-  .faq-intro h2 {
-    font-size: 40px;
-  }
+    .bp-intro h2 {
+        font-size: 42px;
+    }
 
-  .faq-group {
-    margin-bottom: 50px;
-    padding: 0 8px;
-  }
+    .bp-group-heading h3 {
+        font-size: 34px;
+    }
 
-  .faq-group-heading h3 {
-    font-size: 25px;
-  }
+    .bp-person {
+        max-width: 300px;
+        margin-bottom: 48px;
+    }
 
-  .faq-item summary {
-    grid-template-columns: 38px 1fr 25px;
-    gap: 10px;
-    min-height: 78px;
-    padding: 18px 5px;
-  }
+    .bp-photo,
+    .bp-family-person .bp-photo {
+        max-width: 250px;
+    }
 
-  .faq-question {
-    font-size: 20px;
-  }
+    .bp-person h4 {
+        font-size: 27px;
+    }
 
-  .faq-answer {
-    padding: 0 35px 25px 53px;
-  }
+    .bp-section-divider {
+        max-width: 300px;
+        margin: 20px auto 60px;
+    }
 
-  .faq-closing {
-    margin-top: 60px;
-    padding: 0 15px;
-  }
+    .bp-section-divider span {
+        width: 110px;
+    }
 }
 
 @media screen and (max-width: 480px) {
-  .faq-intro h2 {
-    font-size: 36px;
-  }
+    .bp-photo,
+    .bp-family-person .bp-photo {
+        max-width: 225px;
+    }
 
-  .faq-title-divider {
-    width: 210px;
-  }
-
-  .faq-title-divider span {
-    width: 65px;
-  }
-
-  .faq-group-heading {
-    gap: 12px;
-  }
-
-  .faq-item summary {
-    grid-template-columns: 30px 1fr 22px;
-    gap: 8px;
-  }
-
-  .faq-number {
-    font-size: 8px;
-  }
-
-  .faq-question {
-    font-size: 18px;
-  }
-
-  .faq-answer {
-    padding: 0 25px 24px 38px;
-  }
-
-  .faq-answer p {
-    font-size: 12px;
-  }
-
-  .faq-guide-button {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-
-
-/* =========================================================
-   HOMEPAGE STORY SPACING FIX
-   ========================================================= */
-#fh5co-couple {
-  padding-bottom: 45px !important;
-}
-
-#fh5co-couple .heading-section {
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-#fh5co-couple .row:last-child {
-  margin-bottom: 0 !important;
+    .bp-intro h2 {
+        font-size: 38px;
+    }
 }
