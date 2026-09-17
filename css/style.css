@@ -1090,23 +1090,23 @@ body,
 
 /* Temporary hero images. Swap these URLs independently later. */
 .when-where-hero {
-  background-image: url("../images/when-where.png");
+  background-image: url("/images/when-where.png");
 }
 
 .registry-hero {
-  background-image: url("../images/ring-closeup.png");
+  background-image: url("/images/ring-closeup.png");
 }
 
 .bridal-party-hero {
-  background-image: url("../images/first-meet.png");
+  background-image: url("/images/first-meet.png");
 }
 
 .gallery-hero {
-  background-image: url("../images/garden-run.png");
+  background-image: url("/images/garden-run.png");
 }
 
 .faq-hero {
-  background-image: url("../images/into-the-garden.png");
+  background-image: url("/images/into-the-garden.png");
 }
 
 /* =========================================================
