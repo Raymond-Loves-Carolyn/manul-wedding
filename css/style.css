@@ -2300,3 +2300,20 @@ body,
     max-width: 300px;
   }
 }
+
+
+/* =========================================================
+   HOMEPAGE STORY SPACING FIX
+   ========================================================= */
+#fh5co-couple {
+  padding-bottom: 45px !important;
+}
+
+#fh5co-couple .heading-section {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#fh5co-couple .row:last-child {
+  margin-bottom: 0 !important;
+}
