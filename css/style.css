@@ -2232,15 +2232,23 @@ body,
     }
 }
 
-/* =========================================================
-   FAQ PAGE
-   ========================================================= */
+#faq-page {
+  background-color: #071426;
+  background-image: url("../images/whenwhere-bg.png");
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: rgba(248,242,230,.78);
+}
 
 #faq-page,
 .faq-section {
     padding: 90px 0 105px;
-    background: #071426;
     color: rgba(248,242,230,.78);
+}
+
+.faq-section {
+    background: transparent;
 }
 
 .faq-intro {
