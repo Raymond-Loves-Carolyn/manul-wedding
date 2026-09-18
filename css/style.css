@@ -1385,7 +1385,7 @@ body,
 .ww-map {
   min-height: 430px;
   background-color: #0b192b;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
