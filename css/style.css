@@ -2576,3 +2576,64 @@ body,
   padding-top: 45px;
 }
 
+/* =========================================================
+   WHEN & WHERE — CENTERED AIRPORT CARD
+   ========================================================= */
+
+.ww-airport {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto 55px;
+  padding: 42px 35px 44px;
+  text-align: center;
+}
+
+.ww-airport-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.ww-airport-symbol {
+  display: block;
+  margin-bottom: 8px;
+  color: #d8c69d;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.ww-airport-code {
+  display: block;
+  margin: 0 0 8px;
+  color: #f8f2e6;
+  font-size: 54px;
+  line-height: .95;
+}
+
+.ww-airport h3 {
+  margin: 0 0 10px;
+  color: #f8f2e6;
+  font-size: 29px;
+  line-height: 1.2;
+}
+
+.ww-airport p:last-child {
+  max-width: 620px;
+  margin: 0 auto;
+  color: rgba(248,242,230,.62);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 768px) {
+  .ww-airport {
+    padding: 34px 22px 36px;
+  }
+
+  .ww-airport-code {
+    font-size: 46px;
+  }
+
+  .ww-airport h3 {
+    font-size: 25px;
+  }
+}
