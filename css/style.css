@@ -1,3 +1,4 @@
+```
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -2563,3 +2564,14 @@ body,
     .faq-note p,
     .faq-closing p { font-size: 20px; }
 }
+```
+
+/* Tighten spacing between accommodations and directions */
+.ww-travel {
+  padding-bottom: 45px;
+}
+
+.ww-directions {
+  padding-top: 45px;
+}
+
