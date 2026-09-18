@@ -1115,10 +1115,10 @@ body,
 
 #when-where-page {
   background-color: #071426;
-  background-image: url("../images/whenwhere-bg.png");
-  background-size: 100% auto;
+  background-image: url("../images/when-where-bg.png");
+  background-size: cover;
   background-position: center top;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   color: rgba(248,242,230,.78);
 }
 
