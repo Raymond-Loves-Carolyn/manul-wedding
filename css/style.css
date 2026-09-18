@@ -1383,11 +1383,12 @@ body,
 }
 
 .ww-map {
-  min-height: 430px;
-  background-color: #0b192b;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 0;
 }
 
 .ww-route-summary {
