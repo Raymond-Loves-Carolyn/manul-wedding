@@ -2382,26 +2382,6 @@ body,
     background: transparent;
 }
 
-.faq-question::after,
-.faq-question-button::after,
-.faq-toggle::after {
-    content: "+";
-    flex: 0 0 auto;
-    color: #d8c69d;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    font-weight: 300;
-}
-
-.faq-item.active .faq-question::after,
-.faq-item.open .faq-question::after,
-.faq-item.active .faq-question-button::after,
-.faq-item.open .faq-question-button::after,
-.faq-item.active .faq-toggle::after,
-.faq-item.open .faq-toggle::after {
-    content: "×";
-}
-
 .faq-answer,
 .faq-content {
     padding: 0 30px 28px;
@@ -2851,3 +2831,4 @@ body,
     color: #fff6d8 !important;
   }
 }
+````
